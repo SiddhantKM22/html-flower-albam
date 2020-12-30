@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <style>
+        h2 {
+            color: rgb(235, 0, 164);
+            font-size: 35px;
+            text-transform: capitalize;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            text-transform: capitalize;
+        }
+
+        figure {
+            padding: 20px;
+            width: 300px;
+            height: 250px;
+            border: 3px solid rgb(253, 3, 141);
+            overflow: hidden;
+            background-image: url(istockphoto-1002879894-612x612.jpg);
+            box-shadow: 5px 5px 10px rgb(253, 3, 141);
+        }
+
+        img {
+            border-radius: 30px;
+
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>i am siddhant... i am here for learning coding... </h2>
+    <p>i love to do drawing....</p>
+    <figure>
+
+        <img src="flower1.jpg" alt="">
+    </figure>
+    <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. ... They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.</p>
+    <button onclick="changeFlower()">click me</button>
+    <button onclick="gotofirst()">cancel me </button>
+    <script>
+         let index=0
+         var myflowersArray=[
+            'flower1.jpg',
+            'flower2.jpg',
+            'flower3.jpeg',
+            'flower4.jpg',
+            'flower5.jpg',
+
+            ]
+            function gotofirst(){
+                index=0
+                var img=document.querySelector('img')
+           
+            var newimg=myflowersArray[index]
+            img.src=newimg 
+            }
+        function changeFlower(){
+            if(index==4) index=0
+            else
+            index++
+           
+            var img=document.querySelector('img')
+           
+             
+           
+            
+            var newimg=myflowersArray[index]
+            img.src=newimg
+        }
+    </script>
+</body>
+
+</html>
